@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="fastDFSdemo" />
+        <module name="pinyougoucommon" />
+        <module name="pinyougoudao" />
+        <module name="pinyougoumanagerweb" />
+        <module name="pinyougoupojo" />
+        <module name="pinyougousellergoodsinterface" />
+        <module name="pinyougouserllergoodsservice" />
+        <module name="pinyougoushopweb" />
+        <module name="springsecuritydemo" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
