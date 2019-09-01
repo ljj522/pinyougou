@@ -7,15 +7,34 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="fastDFSdemo" />
+        <module name="freemarkerDemo" />
         <module name="pinyougoucommon" />
+        <module name="pinyougoucontentinterdace" />
+        <module name="pinyougoucontentservvice" />
         <module name="pinyougoudao" />
         <module name="pinyougoumanagerweb" />
+        <module name="pinyougoupageinterface" />
+        <module name="pinyougoupageservice" />
+        <module name="pinyougoupageweb" />
         <module name="pinyougoupojo" />
+        <module name="pinyougouportalweb" />
+        <module name="pinyougousearchinterface" />
+        <module name="pinyougousearchservice" />
+        <module name="pinyougousearchweb" />
         <module name="pinyougousellergoodsinterface" />
         <module name="pinyougouserllergoodsservice" />
         <module name="pinyougoushopweb" />
+        <module name="pinyougousolrutil" />
+        <module name="SpringDataRedisDemo" />
+        <module name="springdatasolrDemo" />
         <module name="springsecuritydemo" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="_1pinyougoucontentinterdace" target="1.7" />
+      <module name="pinyougoucontentinterface" target="1.7" />
+      <module name="pinyougoucontentservice" target="1.7" />
+      <module name="tttt" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>
