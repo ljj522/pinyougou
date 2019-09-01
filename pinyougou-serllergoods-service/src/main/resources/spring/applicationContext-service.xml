@@ -16,12 +16,12 @@
     <dubbo:annotation package="com.pinyougou.sellergoods.service.impl" />
 
 	<!-- 事务管理器-->
-<!--	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
 	<property name="dataSource" ref="dataSource"/>
-</bean>-->
+</bean>
 
 	<!-- 开启事务控制的注解支持 -->
-	<!--<tx:annotation-driven transaction-manager="transactionManager"/>-->
+	<tx:annotation-driven transaction-manager="transactionManager"/>
 
 
 </beans>

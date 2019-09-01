@@ -116,7 +116,8 @@ app.controller('goodsController' ,function($scope,$controller,$location   ,goods
 			}			
 		);
 	}
-	
+
+	//上传图片
 	$scope.uploadFile=function () {
         uploadService.uploadFile().success(function(response) {
             if(response.success){//如果上传成功，取出url

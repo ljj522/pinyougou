@@ -17,6 +17,19 @@
         <module>pinyougou-shop-web</module>
         <module>springsecuritydemo</module>
         <module>fastDFSdemo</module>
+        <module>pinyougou-content-interdace</module>
+        <module>pinyougou-content-servvice</module>
+        <module>pinyougou-portal-web</module>
+        <module>SpringDataRedisDemo</module>
+        <module>springdatasolrDemo</module>
+        <module>pinyougou-solr-util</module>
+        <module>pinyougou-search-interface</module>
+        <module>pinyougou-search-service</module>
+        <module>pinyougou-search-web</module>
+        <module>freemarkerDemo</module>
+        <module>pinyougou-page-interface</module>
+        <module>pinyougou-page-service</module>
+        <module>pinyougou-page-web</module>
     </modules>
     <packaging>pom</packaging>
 
