@@ -11,7 +11,7 @@ import javax.jms.ObjectMessage;
 import java.util.Arrays;
 
 @Component
-public class itemDeleteListener implements MessageListener {
+public class ItemDeleteListener implements MessageListener {
 
     @Autowired
     private ItemSearchService itemSearchService;

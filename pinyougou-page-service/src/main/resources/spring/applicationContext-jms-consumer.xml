@@ -15,30 +15,31 @@
 	<bean id="connectionFactory" class="org.springframework.jms.connection.SingleConnectionFactory">  
 	<!-- 目标ConnectionFactory对应真实的可以产生JMS Connection的ConnectionFactory -->  
 	    <property name="targetConnectionFactory" ref="targetConnectionFactory"/>  
-	</bean>  
-	
-    <!--这个是队列目的地，发布订阅生成页面  文本信息-->
+	</bean>
+
+	<!--这个是主题目的    生成页面-->
 	<bean id="topicPageDestination" class="org.apache.activemq.command.ActiveMQTopic">
-	<constructor-arg value="pinyougou_topic_page"/>
-</bean>
+		<constructor-arg value="pinyougou_topic_page"/>
+	</bean>
 
-
-	<!-- 消息监听容器 生成页面-->
+	<!-- 消息监听容器   生成页面 -->
 	<bean class="org.springframework.jms.listener.DefaultMessageListenerContainer">
 		<property name="connectionFactory" ref="connectionFactory" />
 		<property name="destination" ref="topicPageDestination" />
 		<property name="messageListener" ref="pageListener" />
 	</bean>
 
-	<!--删除页面 -->
+
+	<!--这个是主题目的    删除页面-->
 	<bean id="topicPageDeleteDestination" class="org.apache.activemq.command.ActiveMQTopic">
-	<constructor-arg value="pinyougou_topic_page_delete"/>
-</bean>
-		<!-- 消息监听容器 -->
-    <bean class="org.springframework.jms.listener.DefaultMessageListenerContainer">
-         <property name="connectionFactory" ref="connectionFactory"/>
-         <property name="destination" ref="topicPageDeleteDestination"/>
-         <property name="messageListener" ref="pageDeleteListener"/>
+		<constructor-arg value="pinyougou_topic_page_delete"/>
+	</bean>
+
+	<!-- 消息监听容器   生成页面 -->
+	<bean class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+		<property name="connectionFactory" ref="connectionFactory" />
+		<property name="destination" ref="topicPageDeleteDestination" />
+		<property name="messageListener" ref="pageDeleteListener" />
 	</bean>
 
 

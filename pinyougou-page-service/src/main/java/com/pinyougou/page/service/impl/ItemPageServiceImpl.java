@@ -17,7 +17,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer;
 
-import java.io.File;
 import java.io.FileWriter;
 import java.io.Writer;
 import java.util.HashMap;
@@ -93,15 +92,6 @@ public class ItemPageServiceImpl implements ItemPageService {
 
     @Override
     public boolean deleteItemHtml(Long[] goodsIds) {
-        try {
-            for(Long goodsId:goodsIds){
-                new File(pagedir+goodsId+".html").delete();
-            }
-            return true;
-        } catch (Exception e) {
-            e.printStackTrace();
-            return false;
-        }
+        return false;
     }
-
 }
