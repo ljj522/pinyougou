@@ -56,7 +56,7 @@
         <security.version>3.2.3.RELEASE</security.version>
         <solrj.version>4.10.3</solrj.version>
         <ik.version>2012_u6</ik.version>
-        <spring-security.version>4.1.0.RELEASE</spring-security.version>
+        <spring-security.version>5.2.10.RELEASE</spring-security.version>
     </properties>
 
     <dependencyManagement>
@@ -228,7 +228,7 @@
             <dependency>
                 <groupId>org.springframework.security</groupId>
                 <artifactId>spring-security-web</artifactId>
-                <version>4.1.0.RELEASE</version>
+                <version>5.2.10.RELEASE</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.security</groupId>
